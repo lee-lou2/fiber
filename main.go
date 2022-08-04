@@ -1,11 +1,13 @@
 package main
 
 import (
-	"car/database"
-	"car/middleware"
-	"car/router"
-	"github.com/gofiber/fiber/v2"
 	"log"
+
+	"api/database"
+	"api/middleware"
+	"api/router"
+
+	"github.com/gofiber/fiber/v2"
 )
 
 func main() {

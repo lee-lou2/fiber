@@ -1,13 +1,15 @@
 package database
 
 import (
-	"car/conf"
-	"car/model"
 	"fmt"
+	"strconv"
+
+	"api/conf"
+	"api/model"
+
 	"gorm.io/driver/postgres"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
-	"strconv"
 )
 
 func ConnectDB() {
@@ -19,7 +21,6 @@ func ConnectDB() {
 	// 데이터베이스 마이그레이션
 	DB.AutoMigrate(&model.User{})
 	DB.AutoMigrate(&model.Phone{})
-	DB.AutoMigrate(&model.Car{})
 }
 
 func ConnectSqliteDB() {

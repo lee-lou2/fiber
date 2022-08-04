@@ -1,7 +1,8 @@
 package router
 
 import (
-	"car/handler"
+	"api/handler"
+
 	"github.com/gofiber/fiber/v2"
 )
 

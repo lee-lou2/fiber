@@ -1,9 +1,11 @@
 package consts
 
 import (
-	"car/database"
-	"gorm.io/gorm"
 	"os"
+
+	"api/database"
+
+	"gorm.io/gorm"
 )
 
 type ProjectConstant struct {

@@ -1,17 +1,19 @@
 package handler
 
 import (
-	"car/cache"
-	"car/core/errors"
-	"car/core/template"
-	"car/core/utils"
-	"car/database"
-	"car/model"
+	"strconv"
+	"time"
+
+	"api/cache"
+	"api/core/errors"
+	"api/core/template"
+	"api/core/utils"
+	"api/database"
+	"api/model"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
 	"golang.org/x/crypto/bcrypt"
-	"strconv"
-	"time"
 )
 
 func hashPassword(password string) (string, error) {

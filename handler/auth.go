@@ -1,20 +1,22 @@
 package handler
 
 import (
-	"car/cache"
-	"car/conf"
-	"car/core/errors"
-	"car/core/template"
-	"car/core/utils"
-	"car/database"
-	"car/model"
 	errorDetail "errors"
+	"strconv"
+	"time"
+
+	"api/cache"
+	"api/conf"
+	"api/core/errors"
+	"api/core/template"
+	"api/core/utils"
+	"api/database"
+	"api/model"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang-jwt/jwt/v4"
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
-	"strconv"
-	"time"
 )
 
 func CheckPasswordHash(password, hash string) error {

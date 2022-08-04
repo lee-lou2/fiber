@@ -1,7 +1,8 @@
 package middleware
 
 import (
-	"car/conf"
+	"api/conf"
+
 	"github.com/gofiber/fiber/v2"
 	jwtWare "github.com/gofiber/jwt/v3"
 )

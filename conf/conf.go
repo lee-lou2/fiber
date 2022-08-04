@@ -1,8 +1,9 @@
 package conf
 
 import (
-	"github.com/joho/godotenv"
 	"os"
+
+	"github.com/joho/godotenv"
 )
 
 func Config(key string) string {

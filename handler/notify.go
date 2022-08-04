@@ -1,13 +1,15 @@
 package handler
 
 import (
-	"car/conf"
 	"fmt"
-	twilioApi "github.com/kevinburke/twilio-go"
-	"gopkg.in/gomail.v2"
 	"log"
 	"net/url"
 	"strconv"
+
+	"api/conf"
+
+	twilioApi "github.com/kevinburke/twilio-go"
+	"gopkg.in/gomail.v2"
 )
 
 func NotifySendEmail(toEmail, subject, message string) {
